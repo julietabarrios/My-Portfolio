@@ -13,6 +13,9 @@
     border-color: rgb(174, 156, 159);
     /* color: #716371; */
     color:black;
+    position: fixed;
+    width: 100%;
+    background-color: white;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
 }
 
@@ -75,12 +78,20 @@ body{
     height: 100vh;
     border-top: thin solid #716371;
     border-bottom: thin solid #716371;
-    align-content: start;
+    flex-direction: column;
+    display: flex;
+    justify-content: center;
+}
+
+#about-content{
+    display: flex;
+    align-items: center;
 }
 
 #about h1{
     font-size: 100px;
-    float: left;
+    padding-right: 40px;
+    /* float: left; */
 }
 
 #about button{
@@ -90,10 +101,12 @@ body{
     width: 120px;
     height: 40px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    align-self: center;
 }
 
+
 #about p{
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /* projects */
@@ -105,14 +118,12 @@ body{
     justify-items: center;
 
 }
-
-#projects img{
-    width: 500px;
-}
-
 #projects article{
     height: 100vh;
     justify-self: center;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
 }
 
 #projects h1{
@@ -127,6 +138,11 @@ body{
     border-top: thin solid #716371;
     border-bottom: thin solid #716371;
     align-items: center;
+    text-align: center;
+}
+
+video{
+    width: 500px;
 }
 
 /* skills */
@@ -134,5 +150,99 @@ body{
 #skills{
     display:grid;
     grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2px;
+    justify-items: center;
 }
+
+#skills-section{
+    border-top: thin solid #716371;
+    border-bottom: thin solid #716371;
+    height: 100vh;
+}
+
+#skills ul li{
+    list-style: none;
+    align-items: center;
+}
+
+#skills ul{
+    padding: 0;
+}
+
+#skills img{
+    width: 40px;
+}
+
+#skills-section h1{
+    font-size: 80px;
+    margin-top: 5px;
+    text-align: center;
+}
+
+/* contact */
+
+#contact{
+    display: flex;
+    justify-content: space-around;
+    height: 90vh;
+}
+
+#mail-location{
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+#mail{
+    padding-right: 20px;
+}
+
+#contact-right{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#contact-right input{
+    margin-bottom: 20px;
+    width: 300px;
+}
+
+#contact-right button{
+    width: 100px;
+    height: 35px;
+    align-self: center;
+    background-color: #716371;
+    color: antiquewhite;
+    border: solid thin;
+}
+
+#contact h1{
+    font-size: 90px;
+    margin:0;
+
+}
+#contact img{
+    width: 40px;
+}
+
+#message{
+    height: 200px;
+}
+
+/* footer */
+
+footer{
+    background-color: #716371;
+    color: antiquewhite;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer.p{
+    margin: 0;
+}
+
 

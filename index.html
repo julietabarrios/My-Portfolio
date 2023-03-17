@@ -11,7 +11,7 @@
         name="keywords"
         content="developer, fullstack, javascript developer, web and mobile developer portfolio, fullstack developer"
     />
-    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon" />
+    <link rel="shortcut icon" href="./images/Portfolio-icon.png" type="image/x-icon" />
     <meta property="og:title" content="Julieta Barrios portfolio page" />
     <meta
         property="og:description"
@@ -71,8 +71,10 @@
     <!-- end about section -->
 
     <section id="about">
+        <article id="about-content">
         <h1>ABOUT</h1>
         <p>I'm an aspiring junior full-stack developer who has just graduated from a developer course at Barcelona Code School. I've always been fascinated with computer science and the ever-changing world of apps. That's why I became interested in programming. I study and code every day, turning it into a habit. During the course, I have built a number of projects that helped me understand programming concepts and learn the necessary technologies. Currently, I'm looking for a fulltime junior developer position where I could continue to grow my skill set and build exciting software.</p>
+        </article>
         <button>Download my CV</button>
     </section>
 
@@ -80,55 +82,58 @@
         <h1>PROJECTS</h1>
         <div id="projects-grid">
         <article>
-            <img src="./images/simple-page-image.png" alt="Home Page of the single page website">
+            <video autoplay loop muted>
+                <source src="./videos/single-page-video.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
         </article>
         <article>
             <h2>Single Page Website</h2>
             <p>My single page website was about a gluten free bakery shop</p>
             <p>Built with: HTML and CSS</p>
-            <a href="">View Code</a>
-            <a href="">View Live</a>
+            <a href="">Code</a>
         </article>
         <article>
             <h2>The New York Times Clone Page</h2>
             <p>It is a clone homepage of The New York Time's website without any functionality</p>
             <p>Built with: HTML and CSS</p>
-            <a href="">View Code</a>
-            <a href="">View Live</a>
+            <a href="">Code</a>
         </article>
         <article>
-            <img src="./images/TheNewYorkTimes-Homepage.png" alt="The New York Times Clone Homepage">
+            <video autoplay loop muted>
+                <source src="./videos/TheNewYorkTimes-ClonePage.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+              </video>
         </article>
         </div>
     </section>
 
-    <section>
-        <h1>Skills</h1>
+    <section id="skills-section">
+        <h1>SKILLS</h1>
         <div id="skills">
         <article class="list-skills">
             <h2>Frontend</h2>
             <ul>
-                <li><img src="" alt="">JavaScript</li>
-                <li><img src="" alt="">React</li>
-                <li><img src="" alt="">React Native</li>
-                <li><img src="" alt="">HTML</li>
-                <li><img src="" alt="">CSS</li>
-                <li><img src="" alt="">Material UI</li>
+                <li><img src="./images/JavaScript-Logo.png" alt="JavaScript logo">JavaScript</li>
+                <li><img src="./images/react-logo.png" alt="React logo">React</li>
+                <li><img src="./images/react-native-logo.png" alt="Reactive Native Logo">React Native</li>
+                <li><img src="./images/html logo.png" alt="HTML Logo">HTML</li>
+                <li><img src="./images/css logo.png" alt="CSS Logo">CSS</li>
             </ul>
         </article>
         <article class="list-skills">
         <h2>Backend</h2>
             <ul>
-                <li><img src="" alt="">Express</li>
-                <li><img src="" alt="">MongoDB</li>
-                <li><img src="" alt="">Node</li>
+                <li><img src="./images/express logo.png" alt="Express Logo">Express</li>
+                <li><img src="./images/MongoDB-Logo.jpg" alt="MongoDB Logo">MongoDB</li>
+                <li><img src="./images/node-js logo.png" alt="Node Logo">Node</li>
             </ul>
         </article>
         <article class="list-skills">
-            <h2>Others tools and technologies</h2>
+            <h2>Others</h2>
                 <ul>
-                    <li><img src="" alt="">Git</li>
-                    <li><img src="" alt="">GitHub</li>
+                    <li><img src="./images/git logo.png" alt="">Git</li>
+                    <li><img src="./images/github logo.png" alt="">GitHub</li>
                 </ul>
             </article>
         </div>
@@ -144,11 +149,11 @@
             </div>
             <div id="mail-location">
                 <div id="mail">
-                    <img src="" alt="">
+                    <img src="./images/mail-icon.png" alt="Mail Icon">
                     <p>julietabarriosd@gmail.com</p>
                 </div>
                 <div id="location">
-                    <img src="" alt="">
+                    <img src="./images/icon-location.png" alt="Location-Icon">
                     <p>Buenos Aires, Argentina</p>
                 </div>
             </div>
@@ -156,13 +161,13 @@
         <article id="contact-right">
             <input type="input" name="name" placeholder="Name...">
             <input type="input" name="email" placeholder="Email...">
-            <input type="input" name="message" placeholder="Message...">
-            <button>SEND MESSAGE</button>
+            <input id="message" type="input" name="message" placeholder="Message...">
+            <button>SEND</button>
         </article>
     </section>
 
     <footer>
-        <p>2023 JULIETA BARRIOS. All rights reserved.</p>
+        <p>© 2023 Julieta Barrios. All rights reserved.</p>
     </footer>
 
 
