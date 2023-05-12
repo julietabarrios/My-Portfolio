@@ -11,8 +11,8 @@
     margin: 0px;
     padding-top: 0px;
     height: 65px;
-    border-top: thick solid;
-    border-bottom: thick solid;
+    
+    border-bottom: 2px solid;
     border-color: lime;
     color:black;
     position: fixed;
@@ -93,6 +93,7 @@ body{
     flex-direction: column;
     display: flex;
     justify-content: center;
+    gap: 1px;
 }
 
 
@@ -103,9 +104,9 @@ body{
 
 #about a{
     color: #ff2301;
-    
     align-self: center;
     text-decoration: none;
+    margin-bottom: 40px;
 }
 
 #about a:hover{
@@ -115,6 +116,8 @@ body{
 
 #about p{
     font-size: 20px;
+    margin: 50px 100px;
+    text-align: justify;
 }
 
 /* projects */
@@ -128,7 +131,7 @@ body{
 }
 #projects article{
     height: 100vh;
-    justify-self: center;
+    justify-content: center;
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -136,7 +139,8 @@ body{
 
 #projects h1{
     font-size: 80px;
-    margin-top:5px;
+    margin-top:100px;
+    margin-bottom: 70px;
 }
 #projects h2{
     font-size: 30px;
@@ -174,12 +178,18 @@ video:hover{
     grid-template-columns: 1fr 1fr 1fr;
     column-gap: 2px;
     justify-items: center;
+    margin-bottom: 100px;
 }
 
 #skills-section{
     border-top: thin solid lime;
     border-bottom: thin solid lime;
     height: 100vh;
+    padding-bottom: 50px;
+}
+
+#skills-section h1{
+    margin-top: 100px;
 }
 
 #skills ul li{
@@ -187,8 +197,16 @@ video:hover{
     align-items: center;
     padding-bottom: 30px;
 }
+.list-skills{
+    border: thin solid black;
+    padding-right:40px;
+    padding-left: 40px;
+    border-right:hidden;
+    border-bottom: hidden;
+}
+
 #skills ul li:hover{
-    text-shadow: 2px 2px lime;
+    text-shadow: 0.5px 0.5px lime ;
 }
 
 #skills ul{
@@ -201,7 +219,7 @@ video:hover{
 
 #skills-section h1{
     font-size: 80px;
-    margin-top: 5px;
+    margin-top: 80px;
     text-align: center;
 }
 
@@ -217,6 +235,10 @@ video:hover{
 
 #contact{
     height: 90vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 #mail{
@@ -264,11 +286,12 @@ video:hover{
     font-size: 90px;
     margin:0;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
+    margin-top: 50px;
 
 }
 #contact img{
-    width: 55px;
+    width: 40px;
 }
 
 #logoLinekdin img{
@@ -281,15 +304,15 @@ video:hover{
 #contact-left{
     text-align: center;
     font-size: 25px;
+    margin-bottom: 50px;
 }
 
 #contact ul{
     list-style: none;
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
     padding-left: 0;
+    align-items:flex-start ;
 }
 
 #contact ul li{
@@ -299,6 +322,7 @@ video:hover{
 .social-media{
     display: flex;
     align-items: center;
+    gap:3px
 }
 
 .social-media a{
