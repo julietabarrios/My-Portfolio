@@ -155,6 +155,11 @@ video{
     width: 500px;
 }
 
+video:hover{
+    width: 600px;
+    border: solid lime;
+}
+
 /* skills */
 
 #skills{
@@ -253,9 +258,12 @@ video{
 
 }
 #contact img{
-    width: 60px;
+    width: 55px;
 }
 
+#logoLinekdin img{
+    width: 10px;
+}
 #message{
     height: 200px;
 }
@@ -264,6 +272,36 @@ video{
     text-align: center;
     font-size: 25px;
 }
+
+#contact ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#contact ul li{
+    padding-top: 35px;
+}
+
+.social-media{
+    display: flex;
+    align-items: center;
+}
+
+.social-media a{
+    text-decoration: none;
+    color: black;
+}
+.social-media a:hover{
+    color: #ff2301;
+}
+
+#contact ul li p{
+    margin: 0;
+}
+
 
 /* footer */
 
