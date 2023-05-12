@@ -1,9 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,300;1,300;1,500&family=Zilla+Slab:wght@300&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans&family=Poiret+One&family=Ubuntu:ital,wght@0,300;1,300;1,500&family=Zilla+Slab:wght@300&display=swap');
 /* topbar */
 
 #topbar{
-    font-family: 'Zilla Slab', serif;
+    font-family: 'Instrument Sans', sans-serif;
     display: flex;
     justify-content: space-between;
     font-size: 25px;
@@ -12,16 +11,16 @@
     padding-top: 0px;
     height: 65px;
     
-    border-bottom: 2px solid;
-    border-color: lime;
+    /* border-bottom: 2px solid;
+    border-color: #228B22; */
     color:black;
     position: fixed;
     width: 100%;
-    background-color: beige;
+    background-color: rgb(193, 213, 171);
 }
 
 body{
-    background-color: beige;
+    background-color: rgb(230, 245, 220);
     margin: 0;
     font-family: 'Zilla Slab', serif;
 }
@@ -34,7 +33,7 @@ body{
 #topbar ul li{
     margin-right: 30px;
     list-style: none;
-    border-left: solid thin lime;
+    border-left: solid thin #228B22;
     padding-left: 30px;
 }
 
@@ -44,7 +43,8 @@ body{
 }
 
 #topbar a:hover{
-    color: #ff2301;
+    color: #228B22;
+    text-shadow: 1px 1px rgb(193, 213, 171);
 }
 
 #topbar h1{
@@ -66,11 +66,11 @@ body{
     width: auto;
     height: 70vh;
     border-radius: 5px;
-    border: thin solid #ff2301;
+    border: thin solid #228B22;
 }
 
 #introduction img:hover{
-    border: thick solid #ff2301;
+    border: 4px solid #228B22;
 }
 
 #introduction h2{
@@ -88,8 +88,8 @@ body{
 
 #about{
     height: 100vh;
-    border-top: thin solid lime;
-    border-bottom: thin solid lime;
+    border-top: thin solid #228B22;
+    border-bottom: thin solid #228B22;
     flex-direction: column;
     display: flex;
     justify-content: center;
@@ -103,14 +103,16 @@ body{
 }
 
 #about a{
-    color: #ff2301;
+    color: #228B22;
     align-self: center;
     text-decoration: none;
     margin-bottom: 40px;
 }
 
 #about a:hover{
-    color: lime;
+    color: #228B22;
+    text-shadow: 1px 1px rgb(193, 213, 171);
+    font-size: 20px;
 }
 
 
@@ -147,19 +149,21 @@ body{
 }
 
 #projects{
-    border-top: thin solid lime;
-    border-bottom: thin solid lime;
+    border-top: thin solid #228B22;
+    border-bottom: thin solid #228B22;
     align-items: center;
     text-align: center;
 }
 
 #projects a{
-    color: #ff2301 ;
+    color: #228B22 ;
     text-decoration: none;
 }
 
 #projects a:hover{
-    color: lime;
+    color: #228B22;
+    text-shadow: 1px 1px rgb(193, 213, 171);
+    font-size: 20px;
 }
 
 video{
@@ -168,7 +172,7 @@ video{
 
 video:hover{
     width: 600px;
-    border: solid lime;
+    border: solid #228B22;
 }
 
 /* skills */
@@ -182,8 +186,8 @@ video:hover{
 }
 
 #skills-section{
-    border-top: thin solid lime;
-    border-bottom: thin solid lime;
+    border-top: thin solid #228B22;
+    border-bottom: thin solid #228B22;
     height: 100vh;
     padding-bottom: 50px;
 }
@@ -206,7 +210,7 @@ video:hover{
 }
 
 #skills ul li:hover{
-    text-shadow: 0.5px 0.5px lime ;
+    text-shadow: 0.5px 0.5px #228B22 ;
 }
 
 #skills ul{
@@ -251,7 +255,8 @@ video:hover{
 }
 
 #mail a:hover{
-    color:#ff2301;
+    color:#228B22;
+    text-shadow: 1px 1px rgb(193, 213, 171);
 }
 
 /* #contact-right{
@@ -266,20 +271,20 @@ video:hover{
 }
 
 #contact-right input:hover{
-    border: solid lime thin;
+    border: solid #228B22 thin;
 }
 
 #contact-right button{
     width: 100px;
     height: 35px;
     align-self: center;
-    background-color: #ff2301;
+    background-color: #228B22;
     color: antiquewhite;
     border: solid thin;
 }
 
 #contact-right button:hover{
-    background-color: lime;
+    background-color: #228B22;
 } */
 
 #contact h1{
@@ -330,7 +335,8 @@ video:hover{
     color: black;
 }
 .social-media a:hover{
-    color: #ff2301;
+    color: #228B22;
+    text-shadow: 1px 1px rgb(193, 213, 171);
 }
 
 #contact ul li p{
@@ -341,8 +347,8 @@ video:hover{
 /* footer */
 
 footer{
-    background-color: #ff2301;
-    color: antiquewhite;
+    background-color: rgb(193, 213, 171);
+    color: black;
     height: 40px;
     display: flex;
     align-items: center;
