@@ -169,6 +169,13 @@ body{
 video{
     width: 500px;
 }
+#appVideo video{
+    width: 200px;
+}
+#appVideo video:hover{
+    width: 250px;
+    border: solid #228B22;
+}
 
 video:hover{
     width: 600px;
