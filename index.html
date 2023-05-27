@@ -29,8 +29,8 @@
 <body>
 
     <section id="topbar">
-        <h1>Julieta Barrios</h1>
-        <nav>
+        <h1>JULIETA BARRIOS</h1>
+        <nav id="top">
             <ul>
                 <li><a href="#about">ABOUT</a></li>
                 <li><a href="#projects">PROJECTS</a></li>
@@ -38,13 +38,23 @@
                 <li><a href="#contact">CONTACT</a></li>
             </ul>
         </nav>
+        <div class="hamburger">
+            <span>|||</span>
+            <div class="hamburger-content">
+                <li><a href="#about">ABOUT</a></li>
+                <li><a href="#projects">PROJECTS</a></li>
+                <li><a href="#skills-section">SKILLS</a></li>
+                <li><a href="#contact">CONTACT</a></li>
+            </div>
+        </div>
     </section>
 
 
     <section id="introduction">
         <article id="introduction-paragrph">
             <h2>Welcome</h2>
-            <p>I'm a full stack developer based in Argentina</p>
+            <p>I'm a <span class="bold">full stack developer</span> based in Argentina</p>
+            <p>who has graduated from Barcelona Code School</p>
         </article>
         <img src="./images/Imagen Julieta Barrios.jpeg" alt="Julieta Barrios Portrait">
     </section>
@@ -52,7 +62,8 @@
     <section id="about">
         <article id="about-content">
         <h1>ABOUT</h1>
-        <p>I'm a junior full-stack developer who has graduated from a bootcamp at Barcelona Code School. I continue learning and coding everyday to expand my knowledge and discover new tools. During the course, I have worked on a number of projects that gave me a full aproach of developing. Currently, I'm looking for a fulltime developer position where I could participate in the development of web applications, contributing to the success of the organization by helping to create robust, scalable, and user-friendly applications that meet the needs of end-users.</p>
+        <p>I'm a JavaScript full-stack developer who has graduated from a bootcamp at Barcelona Code School. During the course, I have worked on a number of projects that gave me a full aproach of developing. Currently, I'm looking for a fulltime developer position where I could participate in the development of web applications and help to create robust, scalable, and user-friendly applications that meet the needs of end-users.</p>
+        <p>Before the course, I graduated as a food engineer in Buenos Aires at Universidad Argentina de la Empresa and I had professional experience in the Quality and Supply Chain area of important multinational companies of mass consumption.</p>
         </article>
         <a href="./files/Julieta Barrios Resume.pdf" download="Julieta Barrios Resume.pdf">Download CV</a>
     </section>
@@ -61,20 +72,32 @@
         <h1>PROJECTS</h1>
         <div id="projects-grid">
         <div>
+            <h2>Recipes calories calculator app</h2>
+            <p>It is a mobile app to calculate recipe's calories. With USDA DB API it is possible to see how many calories an ingredient has, users will input the quantity in grams and know the total energy and quantity. Also, it has the funcionality of saving the recipes to check the energy information later.</p>
+            <p>Built with: React Native, React, JavaScript, HTML and CSS</p>
+            <a href="https://github.com/julietabarrios/foodCalculator">Code</a>
+        </div>
+        <div id="appVideo">
+            <video autoplay loop muted >
+                <source src="./videos/+foodApp.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+                </video>
+            </div>
+        <article>
+            <h2>Foodies Delivery Website</h2>
+            <p>My version of a food delivery website with e-commerce funcionalities. It has two possible views, one for the consumer and the other one for the partnes/restaurant. The restaurant can register, log in, add a dish, edit a dish and their information, delete a dish or their own account. Also, they have the possibility to add pictures of the restaurant and dishes due to Cloudinary. In the consumer view you will se the cart where you can add, substract or delete the whole dish and using Stripe it is possible to enter the payment details and confirm the order.  </p>
+            <p>Built with: JavaScript, React, Express, MongoDB, Stripe, Cloudinary, HTML and CSS</p>
+            <a href="https://github.com/julietabarrios/Delivery-website">Code</a>
+        </article>
+        <article>
             <video autoplay loop muted>
-                <source src="./videos/single-page-video.mp4" type="video/mp4">
+                <source src="./videos/foodies.mp4" type="video/mp4">
               Your browser does not support the video tag.
               </video>
-            </div>
-        <div>
-            <h2>Single Page Website</h2>
-            <p>Gluten free bakery shop web page</p>
-            <p>Built with: HTML and CSS</p>
-            <a href="https://github.com/julietabarrios/bakery-shop-single-page">Code</a>
-        </div>
+        </article>
         <article>
             <h2>The New York Times Clone Page</h2>
-            <p>It is a clone homepage of The New York Time's website without any functionality</p>
+            <p>It is a clone homepage of The New York Time's website.</p>
             <p>Built with: HTML and CSS</p>
             <a href="https://github.com/julietabarrios/new-york-times">Code</a>
         </article>
@@ -85,26 +108,14 @@
               </video>
         </article>
         <article>
+            <h2>Single Page Website</h2>
+            <p>Gluten free bakery shop web page with a gallery and an interactive map.</p>
+            <p>Built with: HTML and CSS</p>
+            <a href="https://github.com/julietabarrios/bakery-shop-single-page">Code</a>
+        </article>
+        <article>
             <video autoplay loop muted>
-                <source src="./videos/foodies.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-              </video>
-        </article>
-        <article>
-            <h2>Foodies Delivery Website</h2>
-            <p>My version of a delivery website with e-commerce funcionalities. It has two possible views, one for the consumer and the other one for the partnes/restaurant. The restaurant can register, log in, add a dish, edit a dish and their information, delete a dish or their own account. Also, they have the possibility to add pictures of the restaurant and dishes due to Cloudinary. </p>
-            <p>Built with: JavaScript, React, Express, MongoDB, Stripe, Cloudinary, HTML and CSS</p>
-            <a href="">Code</a>
-        </article>
-        <article>
-            <h2>Recipes calories calculator app</h2>
-            <p>It is a mobile app to calculate a recipe's calories. With USDA DB API it is possible to see how many calories an ingredient has, users will input the quantity in grames and know the total energy and quantity. Also, it has the funcionality of saving the recipes to check the energy information later.</p>
-            <p>Built with: React Native, React, JavaScript, HTML and CSS</p>
-            <a href="https://github.com/julietabarrios/foodCalculator">Code</a>
-        </article>
-        <article id="appVideo">
-            <video autoplay loop muted >
-                <source src="./videos/+foodApp.mp4" type="video/mp4">
+                <source src="./videos/single-page-video.mp4" type="video/mp4">
               Your browser does not support the video tag.
               </video>
         </article>
@@ -123,10 +134,10 @@
                 <li><img src="./images/html logo.png" alt="HTML Logo">HTML</li>
                 <li><img src="./images/css logo.png" alt="CSS Logo">CSS</li> -->
                 <li>&#128165;JavaScript</li>
-                <li>&#128165;React</li>
+                <li>&#128165;React.js</li>
                 <li>&#128165;React Native</li>
-                <li>&#128165;HTML</li>
-                <li>&#128165;CSS</li>
+                <li>&#128165;HTML5</li>
+                <li>&#128165;CSS3</li>
             </ul>
         </article>
         <article class="list-skills">
@@ -134,13 +145,13 @@
             <ul>
                 <li>&#128165;Express</li>
                 <li>&#128165;MongoDB</li>
-                <li>&#128165;Node</li>
+                <li>&#128165;Node.js</li>
                 <!-- <li><img src="./images/express logo.png" alt="Express Logo">Express</li>
                 <li><img src="./images/MongoDB-Logo.jpg" alt="MongoDB Logo">MongoDB</li>
                 <li><img src="./images/node-js logo.png" alt="Node Logo">Node</li> -->
             </ul>
         </article>
-        <article class="list-skills">
+        <article class="list-skills" id="others">
             <h2>OTHERS</h2>
                 <ul>
                     <li>&#128165;Git</li>
@@ -170,8 +181,8 @@
                 <img src="./images/github logo.png" alt="logoGithub">
                 <a href="https://github.com/julietabarrios">github.com/julietabarrios</a>
                 </li>
-                <li class="social-media">
-                    <img style='width: 25px' src="./images/logo linkedin.png" alt="logoLinkedin">
+                <li id="social-media">
+                    <img src="./images/logo linkedin.png" alt="logoLinkedin">
                 <a href="https://www.linkedin.com/in/julieta-barriosd/">linkedin.com/in/julieta-barriosd</a>
                 </li>
                 

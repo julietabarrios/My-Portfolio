@@ -1,8 +1,8 @@
-@import url('https://fonts.googleapis.com/css2?family=Instrument+Sans&family=Poiret+One&family=Ubuntu:ital,wght@0,300;1,300;1,500&family=Zilla+Slab:wght@300&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Instrument+Sans&family=Montserrat:wght@300&family=Open+Sans&family=Poiret+One&family=Raleway:wght@200&family=Roboto:ital,wght@0,300;0,400;1,300&family=Ubuntu:ital,wght@0,300;1,300;1,500&family=Urbanist:ital,wght@0,200;1,500&family=Zilla+Slab:wght@300&display=swap");
 /* topbar */
 
 #topbar{
-    font-family: 'Instrument Sans', sans-serif;
+    font-family:'Urbanist', sans-serif;
     display: flex;
     justify-content: space-between;
     font-size: 25px;
@@ -10,9 +10,8 @@
     margin: 0px;
     padding-top: 0px;
     height: 65px;
-    
-    /* border-bottom: 2px solid;
-    border-color: #228B22; */
+    border-bottom: 1.5px solid;
+    border-color: coral;
     color:black;
     position: fixed;
     width: 100%;
@@ -22,7 +21,7 @@
 body{
     background-color: rgb(230, 245, 220);
     margin: 0;
-    font-family: 'Zilla Slab', serif;
+    font-family: 'Open Sans', sans-serif;
 }
 
 #topbar ul{
@@ -33,7 +32,7 @@ body{
 #topbar ul li{
     margin-right: 30px;
     list-style: none;
-    border-left: solid thin #228B22;
+    border-left: solid thin coral;
     padding-left: 30px;
 }
 
@@ -49,7 +48,13 @@ body{
 
 #topbar h1{
     padding-left: 30px;
-    font-size: 50px;
+    font-size: 35px;
+    letter-spacing: 4px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.hamburger {
+    display:none;
 }
 
 
@@ -60,6 +65,7 @@ body{
     justify-content: space-around;
     height: 100vh;
     align-items: center;
+    text-align: center;
 }
 
 #introduction img{
@@ -67,21 +73,26 @@ body{
     height: 70vh;
     border-radius: 5px;
     border: thin solid #228B22;
+    margin-top: 100px;
 }
 
-#introduction img:hover{
+/* #introduction img:hover{
     border: 4px solid #228B22;
-}
+} */
 
 #introduction h2{
     font-size: 70px;
     text-align: center;
-   
+    font-family: 'Raleway', sans-serif;
 }
 
 #introduction p{
-    font-size: 30px;
-    
+    font-size: 20px;  
+}
+.bold{
+    font-style: italic;
+    font-weight: bold;
+    color:coral;
 }
 
 /* about */
@@ -100,6 +111,7 @@ body{
 #about h1{
     font-size: 100px;
     text-align: center;
+    font-family: 'Raleway', sans-serif;
 }
 
 #about a{
@@ -110,7 +122,7 @@ body{
 }
 
 #about a:hover{
-    color: #228B22;
+    color: coral;
     text-shadow: 1px 1px rgb(193, 213, 171);
     font-size: 20px;
 }
@@ -119,7 +131,6 @@ body{
 #about p{
     font-size: 20px;
     margin: 50px 100px;
-    text-align: justify;
 }
 
 /* projects */
@@ -143,6 +154,7 @@ body{
     font-size: 80px;
     margin-top:100px;
     margin-bottom: 70px;
+    font-family: 'Raleway', sans-serif;
 }
 #projects h2{
     font-size: 30px;
@@ -153,6 +165,7 @@ body{
     border-bottom: thin solid #228B22;
     align-items: center;
     text-align: center;
+    margin: 0 20px;
 }
 
 #projects a{
@@ -161,7 +174,7 @@ body{
 }
 
 #projects a:hover{
-    color: #228B22;
+    color: coral;
     text-shadow: 1px 1px rgb(193, 213, 171);
     font-size: 20px;
 }
@@ -201,6 +214,7 @@ video:hover{
 
 #skills-section h1{
     margin-top: 100px;
+    font-family: 'Raleway', sans-serif;
 }
 
 #skills ul li{
@@ -224,9 +238,6 @@ video:hover{
     padding: 0;
 }
 
-#skills img{
-    width: 40px;
-}
 
 #skills-section h1{
     font-size: 80px;
@@ -237,12 +248,9 @@ video:hover{
 #skills-section h2{
     font-size: 30px;
 }
+
 /* contact */
 
-/* #contact-grid{
-    display: flex;
-    justify-content: space-around;
-} */
 
 #contact{
     height: 90vh;
@@ -262,37 +270,9 @@ video:hover{
 }
 
 #mail a:hover{
-    color:#228B22;
+    color:coral;
     text-shadow: 1px 1px rgb(193, 213, 171);
 }
-
-/* #contact-right{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-}
-
-#contact-right input{
-    margin-bottom: 20px;
-    width: 300px;
-}
-
-#contact-right input:hover{
-    border: solid #228B22 thin;
-}
-
-#contact-right button{
-    width: 100px;
-    height: 35px;
-    align-self: center;
-    background-color: #228B22;
-    color: antiquewhite;
-    border: solid thin;
-}
-
-#contact-right button:hover{
-    background-color: #228B22;
-} */
 
 #contact h1{
     font-size: 90px;
@@ -300,10 +280,15 @@ video:hover{
     text-align: center;
     margin-bottom: 10px;
     margin-top: 50px;
-
+    font-family: 'Raleway', sans-serif;
 }
-#contact img{
+
+.social-media img{
     width: 40px;
+}
+
+#social-media img{
+    width: 25px;
 }
 
 #logoLinekdin img{
@@ -331,18 +316,18 @@ video:hover{
     padding-top: 35px;
 }
 
-.social-media{
+.social-media, #social-media{
     display: flex;
     align-items: center;
     gap:3px
 }
 
-.social-media a{
+.social-media a, #social-media a{
     text-decoration: none;
     color: black;
 }
-.social-media a:hover{
-    color: #228B22;
+.social-media a:hover, #social-media a:hover{
+    color: coral;
     text-shadow: 1px 1px rgb(193, 213, 171);
 }
 
@@ -365,6 +350,174 @@ footer{
 
 footer.p{
     margin: 0;
+}
+
+
+
+
+@media all and (max-width:980px){
+    .hamburger {
+        position: relative;
+        display: inline-block;
+        margin-right: 50px;
+    }
+    .hamburger-content {
+        display: none;
+        position: absolute;
+        bottom: -75px;
+        left: -30px;
+        z-index:1;
+        background-color: rgb(193, 213, 171);
+        font-size: 15px;
+        list-style: none;
+    }
+
+    .hamburger:hover .hamburger-content {
+        display: block;
+      }
+    .hamburger span {
+        transition: transform .5s;
+      -webkit-transition: -webkit-transform .5s;
+        display: block;
+        transform: rotate(90deg);
+    }
+    .hamburger:hover span {
+        transition: transform .5s;
+      -webkit-transition: -webkit-transform .5s;
+        display: inline-block;
+        transform: rotate(180deg);
+    }
+    #top ul{
+        display:none;
+    }
+    #top{
+        justify-content:space-around;
+        list-style:none;
+    }
+    #topbar h1{
+        font-size: 30px;
+    }
+    #projects-grid{
+        display: grid;
+        grid-template-columns: 1fr;
+        justify-items: center;
+        width: fit-content;
+    }
+    #about{
+        height: fit-content;
+}
+    #projects article{
+        height: fit-content;
+        margin-bottom: 30px;
+        width: fit-content;
+    }
+     
+    
+}
+
+@media all and (max-width:670px){
+    .hamburger {
+        position: relative;
+        display: inline-block;
+    }
+    .hamburger-content {
+        display:none;
+        position: absolute;
+        left:-100px;
+        z-index:1;
+    }
+    .hamburger:hover .hamburger-content {
+        display: block;
+    }
+    .hamburger span {
+        transition: transform .5s;
+        -webkit-transition: -webkit-transform .5s;
+        display: block;
+        transform: rotate(90deg);
+    }
+    .hamburger:hover span {
+        transition: transform .5s;
+        -webkit-transition: -webkit-transform .5s;
+        display: inline-block;
+        transform: rotate(180deg);
+    }
+    #topbar h1{
+        font-size: 30px;
+    }
+    #top ul{
+        display:none;
+    }
+    #top{
+        justify-content:space-around;
+        list-style:none;
+    }
+    #others{
+        display: none;
+    }
+    #skills-section{
+        height: fit-content;
+        justify-content: center;
+    }
+    
+    #about{
+        height: fit-content;
+    }
+    #about p{
+        font-size: 15px;
+    }
+    #projects article{
+        height: fit-content;
+        margin-bottom: 30px;
+    }
+    #projects article p{
+        width: fit-content;
+    }
+    #introduction img{
+        display: none;
+    }
+    #appVideo video:hover{
+        width: 150px;
+        border: none;
+    }
+    #appVideo video{
+        width: 150px;
+    }
+    video{
+        width: 400px;
+    }
+    video:hover{
+        width: 400px;
+        border: none;
+    }
+    #contact h1, #skills-section h1, #projects h1, #about h1{
+        font-size: 60px;
+    }
+    #introduction h2{
+        font-size: 50px;
+    }
+    #projects article p, #projects div p{
+        font-size: 15px;
+    }
+    #contact a, #contact p{
+        font-size: 15px;
+    }
+    .social-media img{
+        width: 20px;
+    }
+    #social-media img{
+        width: 15px;
+    }
+    #projects{
+        margin: 0;
+        width: fit-content;
+    }
+
+    
+}
+@media all and (max-width:460px){
+    #topbar h1{
+        font-size: 20px;
+    }
 }
 
 
