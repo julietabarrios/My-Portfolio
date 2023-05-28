@@ -42,7 +42,7 @@ body{
 }
 
 #topbar a:hover{
-    color: #228B22;
+    color: coral;
     text-shadow: 1px 1px rgb(193, 213, 171);
 }
 
@@ -99,12 +99,13 @@ body{
 
 #about{
     height: 100vh;
-    border-top: thin solid #228B22;
-    border-bottom: thin solid #228B22;
+    border-top: thin solid coral;
+    border-bottom: thin solid coral;
     flex-direction: column;
     display: flex;
     justify-content: center;
     gap: 1px;
+    padding-bottom: 15px;
 }
 
 
@@ -148,6 +149,13 @@ body{
     display: flex;
     align-items: center;
     flex-direction: column;
+    text-align: justify;
+}
+#projects div p{
+    text-align: justify;
+}
+#projects div{
+    padding-bottom: 10px;
 }
 
 #projects h1{
@@ -161,8 +169,8 @@ body{
 }
 
 #projects{
-    border-top: thin solid #228B22;
-    border-bottom: thin solid #228B22;
+    border-top: thin solid coral;
+    border-bottom: thin solid coral;
     align-items: center;
     text-align: center;
     margin: 0 20px;
@@ -206,8 +214,8 @@ video:hover{
 }
 
 #skills-section{
-    border-top: thin solid #228B22;
-    border-bottom: thin solid #228B22;
+    border-top: thin solid coral;
+    border-bottom: thin solid coral;
     height: 100vh;
     padding-bottom: 50px;
 }
